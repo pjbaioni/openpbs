@@ -136,6 +136,10 @@ How to install PBS using the configure script.
   command:
 
     ./configure --prefix=/opt/pbs
+  For Ubuntu 24.04 systems you should run the following
+  command:
+
+    ./configure --prefix=/opt/pbs --with-python=/usr
 
   For openSUSE systems (see note 3 below) you should run the
   following command:
