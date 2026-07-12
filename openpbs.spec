@@ -70,7 +70,7 @@
 %define pbs_dist %{pbs_name}-%{pbs_version}.tar.gz
 
 %if !%{defined _unitdir}
-%define _unitdir /usr/lib/systemd/system
+%define _unitdir /lib/systemd/system
 %endif
 %if "%{_vendor}" == "debian" && %(test -f /etc/os-release && echo 1 || echo 0)
 %define _vendor_ver %(cat /etc/os-release | awk -F[=\\".] '/^VERSION_ID=/ {print \$3}')
